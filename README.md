@@ -7,6 +7,7 @@ Private desktop environment for `unix` like OS (Linux, Mac, BSD, etc...)
 ## Requirement
 
 - `zsh` (Currently there is only setup for zsh shell)
+- `starship`
 - `exa`* (ls replacement)
 - `bat`* (cat but better)
 - `neovim`*
@@ -23,9 +24,10 @@ make install
 ```
 ## Whats included
 
-This desktop environment includes:
-- shell config (currently only support zsh)
-- vscode config
+This desktop environment includes config for:
+- shell (currently only support zsh)
+- vscode
+- starship
 
 ## Caveat
 
