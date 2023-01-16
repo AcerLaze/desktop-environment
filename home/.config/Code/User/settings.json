@@ -1,0 +1,63 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode nerd font', 'Fira Code'",
+	"editor.fontLigatures": true,
+	
+	// Terminal settings
+	"terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', 'FiraCode nerd font'",
+	"terminal.integrated.fontSize": 15,
+	"terminal.integrated.profiles.linux": {
+		"bash": {
+			"path": "bash",
+			"icon": "terminal-bash"
+		},
+		"zsh": {
+			"path": "zsh"
+		},
+		"fish": {
+			"path": "fish"
+		},
+		"tmux": {
+			"path": "tmux",
+			"icon": "terminal-tmux"
+		},
+		"pwsh": {
+			"path": "pwsh",
+			"icon": "terminal-powershell"
+		}
+	},
+
+	"workbench.colorCustomizations": {
+		"terminal.foreground": "#dbdbdb",
+		"terminal.background": "#14191e",
+
+		"terminal.ansiBlack": "#3c456f",
+		"terminal.ansiBrightBlack": "#6474b9",
+		"terminal.ansiRed": "#db2009",
+		"terminal.ansiBrightRed": "#cc5b4d",
+		"terminal.ansiGreen": "#fb5700",
+		"terminal.ansiBrightGreen": "#ff894b",
+		"terminal.ansiYellow": "#ffb500",
+		"terminal.ansiBrightYellow": "#ffc538",
+		"terminal.ansiBlue": "#ac1c75",
+		"terminal.ansiBrightBlue": "#dc2499",
+		"terminal.ansiMagenta": "#d441d2",
+		"terminal.ansiBrightMagenta": "#dc67db",
+		"terminal.ansiCyan": "#9800c7",
+		"terminal.ansiBrightCyan": "#c578dd",
+		"terminal.ansiWhite": "#cab2ab",
+		"terminal.ansiBrightWhite": "#feffff"
+	},
+	
+	// Language Specific Settings
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	// Plugin Settings
+	"eslint.alwaysShowStatus": true,
+	"eslint.format.enable": true,
+}

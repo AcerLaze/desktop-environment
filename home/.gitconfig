@@ -1,11 +1,8 @@
-[user]
-	name = AcerLaze
-	email = 49096134+AcerLazerRazerTazer@users.noreply.github.com
-
 [url "ssh://git@github.com/"]
 	insteadOf = "https://github.com"
 
 [push]
 	autoSetupRemote = true
+	
 [pull]
 	ff = only
