@@ -1,5 +1,6 @@
 # replace ls with exa if exist
 if type "exa" > /dev/null; then
+    echo "exa found !"
     alias ls="exa -lgh --git --icons"
     alias ll="exa -lg --git-ignore --icons"
     alias la="exa -lagh --git --icons"
