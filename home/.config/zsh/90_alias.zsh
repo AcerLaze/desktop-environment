@@ -35,4 +35,3 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
 alias reload_zsh="source $HOME/.zshrc"
-
