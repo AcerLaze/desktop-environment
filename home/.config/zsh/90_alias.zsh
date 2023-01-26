@@ -36,3 +36,4 @@ alias ......='cd ../../../../..'
 
 alias reload_zsh="source $HOME/.zshrc"
 
+alias git-clear-branch="git branch -d $(git branch -l | grep -v "\*.*")"
