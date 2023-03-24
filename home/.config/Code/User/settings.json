@@ -1,12 +1,23 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-
-    "editor.tabSize": 4,
-    "editor.insertSpaces": false,
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
 	"editor.detectIndentation": false,
 	"editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode nerd font', 'Fira Code'",
 	"editor.fontLigatures": true,
-	
+	"editor.formatOnSave": true,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/node_modules": true,
+		"**/coverage": true,
+		"**/*.log": true
+	},
+	"explorer.excludeGitIgnore": true,
 	// Terminal settings
 	"terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', 'FiraCode nerd font'",
 	"terminal.integrated.fontSize": 15,
@@ -16,7 +27,8 @@
 			"icon": "terminal-bash"
 		},
 		"zsh": {
-			"path": "zsh"
+			"path": "zsh",
+			"icon": "terminal-powershell"
 		},
 		"fish": {
 			"path": "fish"
@@ -30,11 +42,24 @@
 			"icon": "terminal-powershell"
 		}
 	},
-
+	"terminal.integrated.profiles.osx": {
+		"bash": null,
+		"zsh": {
+			"path": "zsh",
+			"args": [
+				"-l"
+			],
+			"icon": "terminal-powershell"
+		},
+		"fish": null,
+		"tmux": null,
+		"pwsh": null
+	},
+	"terminal.external.linuxExec": "kitty",
+	"terminal.external.osxExec": "Kitty.app",
 	"workbench.colorCustomizations": {
 		"terminal.foreground": "#dbdbdb",
 		"terminal.background": "#14191e",
-
 		"terminal.ansiBlack": "#3c456f",
 		"terminal.ansiBrightBlack": "#6474b9",
 		"terminal.ansiRed": "#db2009",
@@ -52,12 +77,37 @@
 		"terminal.ansiWhite": "#cab2ab",
 		"terminal.ansiBrightWhite": "#feffff"
 	},
-	
+	"telemetry.telemetryLevel": "crash",
+	// Plugin Settings
+	"eslint.enable": false,
 	// Language Specific Settings
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"javascript.updateImportsOnFileMove.enabled": "always",
-
-	// Plugin Settings
-	"eslint.alwaysShowStatus": true,
-	"eslint.format.enable": true,
+	"[vue]": {
+		"editor.defaultFormatter": "Vue.volar"
+	},
+	"[javascript]": {
+		"eslint.enable": true,
+		"eslint.alwaysShowStatus": true,
+		"eslint.format.enable": true,
+		"jest.autoRun": {
+			"watch": false,
+			"onSave": [
+				"test-file",
+				"test-src-file"
+			],
+		}
+	},
+	"[typescript]": {
+		"eslint.enable": true,
+		"eslint.alwaysShowStatus": true,
+		"eslint.format.enable": true,
+		"jest.autoRun": {
+			"watch": false,
+			"onSave": [
+				"test-file",
+				"test-src-file"
+			],
+		}
+	},
 }

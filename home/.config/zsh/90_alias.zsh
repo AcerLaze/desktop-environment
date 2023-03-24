@@ -17,15 +17,20 @@ if type "nvim" > /dev/null; then
     alias v="nvim"
 fi
 
-alias sudo="sudo "
-
 # Utilities
-alias fixpacman="sudo rm /var/lib/pacman/db.lck"
-alias grubup="sudo update-grub"
+alias sudo="sudo "
+alias mv="mv -v "
+alias rm="rm -v "
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-alias jctl="journalctl -p 3 -xb"
+
+# Linux specific aliases
+if [[ $(uname) == 'Linux' ]]; then 
+	alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+	alias grubup="sudo update-grub"
+	alias jctl="journalctl -p 3 -xb"
+fi
 
 alias ..='cd ..'
 alias ...='cd ../..'
