@@ -1,0 +1,1 @@
+-d $HOME -1 --wait-for-single-instance-window-close
