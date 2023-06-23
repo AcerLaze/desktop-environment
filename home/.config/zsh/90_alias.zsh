@@ -15,12 +15,16 @@ fi
 if type "nvim" > /dev/null; then
     alias vi="nvim"
     alias v="nvim"
+else 
+	alias vi="vim"
+	alias v="vim"
 fi
 
 # Utilities
 alias sudo="sudo "
 alias mv="mv -v "
 alias rm="rm -v "
+alias less="less -R "
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'

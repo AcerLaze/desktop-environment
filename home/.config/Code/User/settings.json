@@ -1,11 +1,17 @@
 {
 	"workbench.iconTheme": "material-icon-theme",
+	"workbench.startupEditor": "none",
 	"editor.tabSize": 4,
 	"editor.insertSpaces": false,
 	"editor.detectIndentation": false,
+	"editor.linkedEditing": true,
 	"editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode nerd font', 'Fira Code'",
 	"editor.fontLigatures": true,
 	"editor.formatOnSave": true,
+	"editor.letterSpacing": 0.05,
+	"editor.fontSize": 15,
+	"editor.fontVariations": true,
+	"editor.scrollbar.verticalScrollbarSize": 4,
 	"files.exclude": {
 		"**/.git": true,
 		"**/.svn": true,
@@ -59,7 +65,6 @@
 	"terminal.external.osxExec": "Kitty.app",
 	"workbench.colorCustomizations": {
 		"terminal.foreground": "#dbdbdb",
-		"terminal.background": "#14191e",
 		"terminal.ansiBlack": "#3c456f",
 		"terminal.ansiBrightBlack": "#6474b9",
 		"terminal.ansiRed": "#db2009",
@@ -77,37 +82,28 @@
 		"terminal.ansiWhite": "#cab2ab",
 		"terminal.ansiBrightWhite": "#feffff"
 	},
-	"telemetry.telemetryLevel": "crash",
-	// Plugin Settings
-	"eslint.enable": false,
+	"telemetry.telemetryLevel": "off",
+	"git.branchProtection": [
+		"master",
+		"main"
+	],
 	// Language Specific Settings
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"[vue]": {
 		"editor.defaultFormatter": "Vue.volar"
 	},
-	"[javascript]": {
+	"[javascript][typescript]": {
 		"eslint.enable": true,
 		"eslint.alwaysShowStatus": true,
 		"eslint.format.enable": true,
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
 		"jest.autoRun": {
 			"watch": false,
 			"onSave": [
 				"test-file",
 				"test-src-file"
-			],
+			]
 		}
-	},
-	"[typescript]": {
-		"eslint.enable": true,
-		"eslint.alwaysShowStatus": true,
-		"eslint.format.enable": true,
-		"jest.autoRun": {
-			"watch": false,
-			"onSave": [
-				"test-file",
-				"test-src-file"
-			],
-		}
-	},
+	}
 }
