@@ -1,9 +1,31 @@
 {
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.startupEditor": "none",
-	"editor.tabSize": 4,
-	"editor.insertSpaces": false,
-	"editor.detectIndentation": false,
+	"workbench.startupEditor": "welcomePageInEmptyWorkbench",
+	"workbench.colorCustomizations": {
+		"terminal.foreground": "#dbdbdb",
+		"terminal.ansiBlack": "#3c456f",
+		"terminal.ansiBrightBlack": "#6474b9",
+		"terminal.ansiRed": "#db2009",
+		"terminal.ansiBrightRed": "#cc5b4d",
+		"terminal.ansiGreen": "#fb5700",
+		"terminal.ansiBrightGreen": "#ff894b",
+		"terminal.ansiYellow": "#ffb500",
+		"terminal.ansiBrightYellow": "#ffc538",
+		"terminal.ansiBlue": "#ac1c75",
+		"terminal.ansiBrightBlue": "#dc2499",
+		"terminal.ansiMagenta": "#d441d2",
+		"terminal.ansiBrightMagenta": "#dc67db",
+		"terminal.ansiCyan": "#9800c7",
+		"terminal.ansiBrightCyan": "#c578dd",
+		"terminal.ansiWhite": "#cab2ab",
+		"terminal.ansiBrightWhite": "#feffff"
+	},
+	"editor.tabSize": 2,
+	"editor.insertSpaces": true,
+	"editor.detectIndentation": true,
+	"editor.rulers": [
+		100
+	],
 	"editor.linkedEditing": true,
 	"editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode nerd font', 'Fira Code'",
 	"editor.fontLigatures": true,
@@ -63,33 +85,18 @@
 	},
 	"terminal.external.linuxExec": "kitty",
 	"terminal.external.osxExec": "Kitty.app",
-	"workbench.colorCustomizations": {
-		"terminal.foreground": "#dbdbdb",
-		"terminal.ansiBlack": "#3c456f",
-		"terminal.ansiBrightBlack": "#6474b9",
-		"terminal.ansiRed": "#db2009",
-		"terminal.ansiBrightRed": "#cc5b4d",
-		"terminal.ansiGreen": "#fb5700",
-		"terminal.ansiBrightGreen": "#ff894b",
-		"terminal.ansiYellow": "#ffb500",
-		"terminal.ansiBrightYellow": "#ffc538",
-		"terminal.ansiBlue": "#ac1c75",
-		"terminal.ansiBrightBlue": "#dc2499",
-		"terminal.ansiMagenta": "#d441d2",
-		"terminal.ansiBrightMagenta": "#dc67db",
-		"terminal.ansiCyan": "#9800c7",
-		"terminal.ansiBrightCyan": "#c578dd",
-		"terminal.ansiWhite": "#cab2ab",
-		"terminal.ansiBrightWhite": "#feffff"
-	},
 	"telemetry.telemetryLevel": "off",
 	"git.branchProtection": [
 		"master",
-		"main"
+		"main",
+		"develop"
 	],
+	"diffEditor.ignoreTrimWhitespace": true,
 	// Language Specific Settings
 	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.inlayHints.parameterNames.enabled": "all",
 	"javascript.updateImportsOnFileMove.enabled": "always",
+	"javascript.inlayHints.parameterNames.enabled": "all",
 	"[vue]": {
 		"editor.defaultFormatter": "Vue.volar"
 	},
