@@ -21,7 +21,7 @@ else
 fi
 
 # Utilities
-alias sudo="sudo "
+alias sudo="sudo -E"
 alias mv="mv -v "
 alias rm="rm -v "
 alias less="less -R "
@@ -43,3 +43,4 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
 alias reload_zsh="source $HOME/.zshrc"
+alias git-ls='git ls-files -omdt --exclude-standard'
