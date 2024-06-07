@@ -1,9 +1,9 @@
 {
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "none",
-	"editor.tabSize": 4,
-	"editor.insertSpaces": false,
-	"editor.detectIndentation": false,
+	"editor.tabSize": 2,
+	"editor.insertSpaces": true,
+	"editor.detectIndentation": true,
 	"editor.linkedEditing": true,
 	"editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode nerd font', 'Fira Code'",
 	"editor.fontLigatures": true,
