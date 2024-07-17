@@ -20,6 +20,9 @@
 		"terminal.ansiWhite": "#cab2ab",
 		"terminal.ansiBrightWhite": "#feffff"
 	},
+	"workbench.editorLargeFileConfirmation": 1024,
+	"workbench.sideBar.location": "right",
+	"workbench.activityBar.location": "top",
 	"editor.tabSize": 2,
 	"editor.insertSpaces": true,
 	"editor.detectIndentation": true,
@@ -34,6 +37,7 @@
 	"editor.fontSize": 15,
 	"editor.fontVariations": true,
 	"editor.scrollbar.verticalScrollbarSize": 4,
+	"editor.suggest.selectionMode": "whenTriggerCharacter",
 	"files.exclude": {
 		"**/.git": true,
 		"**/.svn": true,
@@ -46,6 +50,13 @@
 		"**/*.log": true
 	},
 	"explorer.excludeGitIgnore": true,
+	"telemetry.telemetryLevel": "off",
+	"git.branchProtection": [
+		"master",
+		"main",
+		"develop"
+	],
+	"diffEditor.ignoreTrimWhitespace": true,
 	// Terminal settings
 	"terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', 'FiraCode nerd font'",
 	"terminal.integrated.fontSize": 15,
@@ -83,15 +94,11 @@
 		"tmux": null,
 		"pwsh": null
 	},
+	"terminal.integrated.hideOnStartup": "whenEmpty",
+	"terminal.integrated.gpuAcceleration": "on",
+	"terminal.integrated.cursorStyleInactive": "none",
 	"terminal.external.linuxExec": "kitty",
 	"terminal.external.osxExec": "Kitty.app",
-	"telemetry.telemetryLevel": "off",
-	"git.branchProtection": [
-		"master",
-		"main",
-		"develop"
-	],
-	"diffEditor.ignoreTrimWhitespace": true,
 	// Language Specific Settings
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"typescript.inlayHints.parameterNames.enabled": "all",
@@ -101,16 +108,6 @@
 		"editor.defaultFormatter": "Vue.volar"
 	},
 	"[javascript][typescript]": {
-		"eslint.enable": true,
-		"eslint.alwaysShowStatus": true,
-		"eslint.format.enable": true,
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
-		"jest.autoRun": {
-			"watch": false,
-			"onSave": [
-				"test-file",
-				"test-src-file"
-			]
-		}
 	}
 }
