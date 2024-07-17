@@ -1,9 +1,14 @@
 # ZSH config
 for file in $HOME/.config/zsh/*; do
-    source "$file"
+  source "$file"
 done
 
-# Start starship
-eval "$(starship init zsh)"
+# Initialize starship
+if type starship > /dev/null; then
+  eval "$(starship init zsh)"
+fi
 
-
+# Initialize zoxide
+if type zoxide > /dev/null; then
+  eval "$(zoxide init zsh)"
+fi

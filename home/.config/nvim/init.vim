@@ -1,8 +1,8 @@
 set smarttab
 
 " Set 1 tab to 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Add line number
 set number
