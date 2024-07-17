@@ -1,0 +1,19 @@
+# Reload yabai
+ctrl + alt + shift - r : yabai --restart-service 
+# Edit yabai config
+# ctrl + alt + shift - c : $EDITOR $HOME/.config/yabai/yabairc
+
+# Window Switching 
+cmd - right : $(yabai -m space --focus next || yabai -m space --focus first)
+cmd - left : $(yabai -m space --focus prev || yabai -m space --focus last) 
+cmd + shift - right : $(yabai -m window --space next || yabai -m window --space first) && $(yabai -m space --focus next || yabai -m space --focus first) && $(yabai -m window --focus last)
+cmd + shift - left : $(yabai -m window --space prev || yabai -m window --space last) && $(yabai -m space --focus prev || yabai -m space --focus last) && $(yabai -m window --focus last)
+ctrl - right : $()
+ctrl - left : $()
+
+# Window Focus Switching
+cmd - tab : $(yabai -m window --focus next || yabai -m window --focus first)
+cmd + shift - tab : $(yabai -m window --focus prev || yabai -m window --focus last)
+
+cmd + shift - t : open -a kitty
+
