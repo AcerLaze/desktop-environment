@@ -1,4 +1,5 @@
 {
+	"telemetry.telemetryLevel": "off",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "welcomePageInEmptyWorkbench",
 	"workbench.colorCustomizations": {
@@ -57,7 +58,6 @@
 		"**/.gradle/**": true,
 	},
 	"explorer.excludeGitIgnore": true,
-	"telemetry.telemetryLevel": "off",
 	"git.branchProtection": [
 		"master",
 		"main",
@@ -119,11 +119,16 @@
 		"javascript.preferences.quoteStyle": "single",
 		"typescript.preferences.quoteStyle": "single"
 	},
+	// Extension Settings
 	"eslint.format.enable": true,
 	"vim.handleKeys": {
-		"<C-d>": true,
+		"<C-d>": false,
 		"<C-s>": false,
 		"<C-z>": false,
-		"<C-a>": false
-	}
+		"<C-a>": false,
+		"<C-p>": false,
+		"<C-v>": false,
+		"<C-c>": false,
+		"<C-k>": false
+	},
 }

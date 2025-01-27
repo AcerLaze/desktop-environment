@@ -1,9 +1,9 @@
 # replace ls with exa if exist
-if type "exa" >/dev/null; then
-  alias ls="exa -lgh --git --icons"
-  alias ll="exa -lg --git-ignore --icons"
-  alias la="exa -lagh --git --icons"
-  alias lt="exa -T"
+if type "eza" >/dev/null; then
+  alias ls="eza -lgh --git --icons"
+  alias ll="eza -lg --git-ignore --icons"
+  alias la="eza -lagh --git --icons"
+  alias lt="eza -T"
 fi
 
 # replace cat with bat if exist
