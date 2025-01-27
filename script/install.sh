@@ -24,7 +24,7 @@ fi
 if [[ -f "$HOME/.gitconfig" ]]; then
 	echo "Ignoring .gitconfig since it may contains credentials"
 else
-	cp $BASE_DIR/home/.gitconfig $HOME/.gitconfig
+	cp $BASE_DIR/.gitconfig $HOME/.gitconfig
 fi
 
 HOME_CONFIG_DIR=$HOME/.config
