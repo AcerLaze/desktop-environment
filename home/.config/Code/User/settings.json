@@ -24,6 +24,7 @@
 	"workbench.editorLargeFileConfirmation": 1024,
 	"workbench.sideBar.location": "right",
 	"workbench.activityBar.location": "top",
+	"window.newWindowProfile": "Default",
 	"editor.tabSize": 2,
 	"editor.insertSpaces": true,
 	"editor.detectIndentation": true,
@@ -119,6 +120,7 @@
 		"javascript.preferences.quoteStyle": "single",
 		"typescript.preferences.quoteStyle": "single"
 	},
+	"java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable",
 	// Extension Settings
 	"eslint.format.enable": true,
 	"vim.handleKeys": {
@@ -131,4 +133,5 @@
 		"<C-c>": false,
 		"<C-k>": false
 	},
+	"makefile.configureOnOpen": true
 }
