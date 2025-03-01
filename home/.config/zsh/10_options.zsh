@@ -3,5 +3,9 @@ setopt extendedglob
 setopt correct
 setopt hist_ignore_all_dups
 
-autoload -U compinit && compinit
+HISTFILE=~/.zsh_history
+HISTSIZE=1000000
+SAVEHIST=1000000
+setopt appendhistory
 
+autoload -U compinit && compinit
