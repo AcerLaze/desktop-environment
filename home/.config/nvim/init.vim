@@ -14,4 +14,6 @@ set ai
 set si
 
 " Wrap lines
-set wrap
+set wrap!
+
+hi Normal guibg=NONE ctermbg=NONE
