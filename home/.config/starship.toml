@@ -1,3 +1,5 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
 ## FIRST LINE/ROW: Info & Status
 # First param ─┌
 [username]
@@ -19,7 +21,7 @@ trim_at = "-"
 style = "purple"
 truncate_to_repo = true
 truncation_length = 0
-truncation_symbol = "repo: "
+truncation_symbol = "git: "
 
 # Fourth param
 [sudo]
@@ -38,30 +40,6 @@ style = "white"
 disabled = false
 format = "took [$duration]($style)"
 min_time = 1
-
-
-## SECOND LINE/ROW: Prompt
-# Somethere at the beginning
-[battery]
-charging_symbol = ""
-disabled = true
-discharging_symbol = ""
-full_symbol = ""
-
-[[battery.display]] # "bold red" style when capacity is between 0% and 10%
-disabled = false
-style = "bold red"
-threshold = 15
-
-[[battery.display]] # "bold yellow" style when capacity is between 10% and 30%
-disabled = true
-style = "bold yellow"
-threshold = 50
-
-[[battery.display]] # "bold green" style when capacity is between 10% and 30%
-disabled = true
-style = "bold green"
-threshold = 80
 
 # Prompt: optional param 1
 [time]
@@ -126,7 +104,7 @@ symbol = " "
 symbol = " "
 
 [package]
-symbol = " "
+symbol = "󰏗 "
 
 [perl]
 symbol = " "
