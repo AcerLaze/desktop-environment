@@ -1,5 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+command_timeout = 1000
+
 ## FIRST LINE/ROW: Info & Status
 # First param ─┌
 [username]
@@ -39,14 +41,7 @@ style = "white"
 [cmd_duration]
 disabled = false
 format = "took [$duration]($style)"
-min_time = 1
-
-# Prompt: optional param 1
-[time]
-disabled = true
-format = " 🕙 $time($style)\n"
-style = "bright-white"
-time_format = "%T"
+min_time = 10000
 
 # Prompt: param 2
 [character]
