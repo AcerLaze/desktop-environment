@@ -1,18 +1,18 @@
 
 function get-head-branch() {
-	head=$(git branch -r | egrep -Eo "origin/HEAD -> origin/.*" | sed -e 's/origin\/HEAD -> origin\///')
+	head=$(git branch -r | grep -Eo "origin/HEAD -> origin/.*" | sed -e 's/origin\/HEAD -> origin\///')
 	echo $head;
 }
 
 function git-clear-branch() {
-	echo "Clearing git branch (except for master) . . ."	
+	echo " ♻️ Clearing git branch (except for $(get-head-branch))..."	
 	
 	for branch in $(git branch -l | grep -Ev "(\*.*)|($(get-head-branch))"); do
-		echo "Deleting branch $branch";
+		echo " -> 🗑️ Deleting branch $branch";
 		git branch -d $($branch);
 	done;
 
-	echo "Branch cleared"
+	echo " ✅ Branch cleaned"
 }
 
 function git-pr() {
