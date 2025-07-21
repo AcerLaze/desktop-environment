@@ -36,7 +36,7 @@
 	"editor.fontLigatures": true,
 	"editor.formatOnSave": true,
 	"editor.letterSpacing": 0.05,
-	"editor.fontSize": 15,
+	"editor.fontSize": 16,
 	"editor.fontVariations": true,
 	"editor.scrollbar.verticalScrollbarSize": 4,
 	"editor.suggest.selectionMode": "whenTriggerCharacter",
@@ -59,6 +59,7 @@
 		"**/.gradle/**": true,
 	},
 	"explorer.excludeGitIgnore": true,
+	"explorer.confirmDelete": false,
 	"git.branchProtection": [
 		"master",
 		"main",
@@ -66,8 +67,10 @@
 	],
 	"diffEditor.ignoreTrimWhitespace": true,
 	// Terminal settings
-	"terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', 'FiraCode nerd font', 'Fira Code'",
-	"terminal.integrated.fontSize": 15,
+	"terminal.integrated.fontFamily": "'FiraCode Nerd Font Propo', 'FiraCode nerd font', 'Fira Code'",
+	"terminal.integrated.fontSize": 16,
+	"terminal.integrated.fontWeight": "400",
+	"terminal.integrated.fontLigatures.enabled": true,
 	"terminal.integrated.profiles.linux": {
 		"bash": {
 			"path": "bash",
@@ -120,7 +123,9 @@
 		"javascript.preferences.quoteStyle": "single",
 		"typescript.preferences.quoteStyle": "single"
 	},
-	"java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable",
+	"files.associations": {
+		"*.json": "jsonc"
+	},
 	// Extension Settings
 	"eslint.format.enable": true,
 	"vim.handleKeys": {
@@ -133,5 +138,5 @@
 		"<C-c>": false,
 		"<C-k>": false
 	},
-	"makefile.configureOnOpen": true
+	"workbench.colorTheme": "Tokyo Night Gogh",
 }
