@@ -32,7 +32,7 @@
 		100
 	],
 	"editor.linkedEditing": true,
-	"editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode nerd font', 'Fira Code'",
+	"editor.fontFamily": "'FiraCode Nerd Font Propo', 'FiraCode nerd font', 'Fira Code'",
 	"editor.fontLigatures": true,
 	"editor.formatOnSave": true,
 	"editor.letterSpacing": 0.05,
@@ -67,7 +67,7 @@
 	],
 	"diffEditor.ignoreTrimWhitespace": true,
 	// Terminal settings
-	"terminal.integrated.fontFamily": "'FiraCode Nerd Font Propo', 'FiraCode nerd font', 'Fira Code'",
+	"terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
 	"terminal.integrated.fontSize": 16,
 	"terminal.integrated.fontWeight": "400",
 	"terminal.integrated.fontLigatures.enabled": true,
