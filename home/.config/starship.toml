@@ -1,10 +1,9 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-command_timeout = 2000
+command_timeout = 1000
+
 format = """
- $sudo\
-$singularity\
-$kubernetes\
+$sudo\
 $directory\
 $vcsh\
 $fossil_branch\
@@ -81,7 +80,8 @@ $crystal\
 $custom\
 $cmd_duration\
 $line_break\
- [](fg:bright-black)\
+[](fg:bright-black)\
+[\
 $jobs\
 $battery\
 $time\
@@ -91,22 +91,25 @@ $container\
 $netns\
 $shell\
 $character\
-[](fg:bright-black) 
-"""
+](bg: bright-black)[](bold black) """
 
 continuation_prompt = " [](bright-black) "
 
 [directory]
-style = "purple"
-truncate_to_repo = true
-truncation_length = 0
-truncation_symbol = "git: "
+style = "bold red"
+truncation_length = 6
+truncation_symbol = ".../"
+format = ' [$path]($style)[$read_only]($read_only_style) '
+repo_root_format = ' [git]($before_repo_root_style):[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) '
+before_repo_root_style = 'cyan'
+repo_root_style = 'bold red'
+read_only = ''
 home_symbol = ""
-read_only = ""
 
 [sudo]
 disabled = false
-format = '[$symbol]($style) '
+style = "bold cyan"
+format = '\([$symbol]($style)\)'
 symbol = "󰨒"
 
 [git_status]
@@ -119,27 +122,29 @@ style = "white"
 [cmd_duration]
 disabled = false
 format = '\([$duration]($style)\)'
-min_time = 1000
+min_time = 5000
 style = "white"
 
-[character]
-error_symbol = ""
-success_symbol = ""
-format = "[$symbol](fg:bright-white bg:bright-black)"
+[jobs]
+format = '[$symbol$number ]($style)'
+style = "bg:bright-black"
 
+[character]
+format = '$symbol'
+error_symbol = ""
+success_symbol = "[ ](bg:bright-black)"
 
 # SYMBOLS
 [status]
 disabled = false
-format = '[$symbol]($style)'
-style = "bold red bg:bright-black"
+format = '[$symbol$status_common_meaning$status_signal_name$status_maybe_int ]($style)'
 map_symbol = true
 pipestatus = true
-symbol = ""
-not_executable_symbol = "󰂭"
-not_found_symbol = ""
-sigint_symbol = "⚡"
+symbol = ""
+not_found_symbol = ""
+sigint_symbol = ""
 signal_symbol = "⚡"
+style = "bold white bg:bright-black"
 
 [aws]
 symbol = " "
@@ -170,6 +175,7 @@ symbol = " "
 
 [java]
 symbol = " "
+style = "bold red"
 
 [julia]
 symbol = " "
