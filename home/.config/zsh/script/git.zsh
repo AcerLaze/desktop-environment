@@ -1,18 +1,36 @@
 
 function get-head-branch() {
-	head=$(git branch -r | grep -Eo "origin/HEAD -> origin/.*" | sed -e 's/origin\/HEAD -> origin\///')
+	local head=$(git branch -r | grep -Eo "origin/HEAD -> origin/.*" | sed -e 's/origin\/HEAD -> origin\///');
 	echo $head;
 }
 
 function git-clear-branch() {
-	echo " ♻️ Clearing git branch (except for $(get-head-branch))..."	
+	echo " ♻️ Clearing git branch (except for $(get-head-branch))...";
+
+	local force=false
 	
+	while getopts 'f' opt; do
+    case $opt in
+      f) force=true ;;
+    esac
+  done
+
+	if [[ "$force" == true ]]; then 
+		echo " -> 🔥 Will force remove branches!";
+	fi
+
 	for branch in $(git branch -l | grep -Ev "(\*.*)|($(get-head-branch))"); do
 		echo " -> 🗑️ Deleting branch $branch";
-		git branch -d $($branch);
+		if [[ "$force" == true ]]; then 
+			git branch -D $branch;
+		else 
+			git branch -d $branch;
+		fi
 	done;
 
-	echo " ✅ Branch cleaned"
+	git remote prune origin;
+
+	echo " ✅ Branch cleaned";
 }
 
 function git-pr() {
@@ -21,7 +39,7 @@ function git-pr() {
 		return;
 	fi
 
-	gitUrl=$(git remote get-url origin | sed -r 's/git@//' | sed -e 's/:/\//' | sed -e 's/.git//');
-	currentBranch=$(git branch --show-current)
+	local gitUrl=$(git remote get-url origin | sed -r 's/git@//' | sed -e 's/:/\//' | sed -e 's/.git//');
+	local currentBranch=$(git branch --show-current);
 	$BROWSER "$gitUrl/compare/$(get-head-branch)...$currentBranch";
 }
