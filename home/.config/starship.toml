@@ -78,7 +78,6 @@ $env_var\
 $mise\
 $crystal\
 $custom\
-$cmd_duration\
 $line_break\
 [](fg:bright-black)\
 [\
@@ -92,6 +91,10 @@ $netns\
 $shell\
 $character\
 ](bg: bright-black)[](bold black) """
+
+right_format = """
+$cmd_duration
+"""
 
 continuation_prompt = " [](bright-black) "
 
@@ -181,7 +184,7 @@ style = "bold red"
 symbol = " "
 
 [nim]
-symbol = " "
+symbol = " "
 
 [nix_shell]
 symbol = " "
