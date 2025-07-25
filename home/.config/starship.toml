@@ -3,7 +3,7 @@
 command_timeout = 1000
 
 format = """
-$sudo\
+ $sudo\
 $directory\
 $vcsh\
 $fossil_branch\
@@ -79,7 +79,7 @@ $mise\
 $crystal\
 $custom\
 $line_break\
-[](fg:bright-black)\
+ [](fg:bright-black)\
 [\
 $jobs\
 $battery\
