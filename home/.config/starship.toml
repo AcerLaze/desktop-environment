@@ -82,7 +82,6 @@ $line_break\
 [](fg:bright-black)\
 [\
 $jobs\
-$battery\
 $time\
 $status\
 $os\
@@ -102,7 +101,7 @@ continuation_prompt = " [](bright-black) "
 style = "bold red"
 truncation_length = 6
 truncation_symbol = ".../"
-format = ' [$path]($style)[$read_only]($read_only_style) '
+format = ' [$path]($style) [$read_only]($read_only_style) '
 repo_root_format = ' [git]($before_repo_root_style): [$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) '
 before_repo_root_style = 'cyan'
 repo_root_style = 'bold red'
