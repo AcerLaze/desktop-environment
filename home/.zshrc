@@ -23,3 +23,4 @@ fi
 if type keychain >/dev/null; then
   eval $(keychain --eval --nogui --ignore-missing --quiet)
 fi
+
